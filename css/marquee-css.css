@@ -1,0 +1,20 @@
+.lsq-marquee {
+    -webkit-animation: scrollUps linear infinite;
+    animation: scrollUps linear infinite;
+    -webkit-animation-duration: 25s !important;
+    animation-duration: 25s !important;
+    transition-duration: 25s !important;
+    overflow: hidden;
+}
+.lsq-marquee:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+@keyframes scrollUps {
+    0% {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50%);
+    }
+}

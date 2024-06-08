@@ -1,0 +1,208 @@
+.main-fade-testimonials-inner.slide-right,
+.main-fade-testimonials-inner.slide-left
+{
+    position: relative;
+}
+.fade-img {
+    text-align: center;
+}
+.fade-img img {
+    max-width: 60px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.fade-content {
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    border-radius: 5px
+}
+.fade-tagline {
+    background: #047afb;
+    color: #fff;
+    border-radius: 30px;
+    padding: 2px 15px 2px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 11px;
+    font-family: 'Graphik-Semibold';
+
+}
+.fade-author-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fade-client-logo {
+    position: relative;
+    top: 5px;
+}
+.fade-client-logo img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 50px;
+}
+span.a-meta-name {
+    font-family: 'Graphik-Semibold';
+    color: #000;
+}
+.a-meta-designation{
+font-size: 10px;
+    margin-top: 7px;
+}
+.fade-text p {
+    line-height: 22px !important;
+}
+.fade-text br,
+.fade-text p br{
+    display: none !important;
+}
+span.a-meta-designation {
+    float: left;
+    line-height: 1.4;
+    margin: 0;
+}
+.position-top,
+.position-bottom{
+    position: relative;
+}
+.position-center{
+    position: unset;
+}
+
+.circle-dot-1 img,
+.circle-dot-2 img,
+.circle-dot-3 img{
+    opacity: 0;
+    transform: scale(0);
+}
+.circle-dot-1 img.animate,
+.circle-dot-2 img.animate,
+.circle-dot-3 img.animate {
+  transform: scale(1);
+}
+section.site-main.page-index li.slide1.__photo.slide-right,
+section.site-main.page-index li.slide1.__photo.slide-left{
+    opacity: 0;
+}
+section.site-main.page-index.center{
+    position: relative;
+    left: -100px;
+    top: -40px;
+}
+section.site-main.page-index.top {
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+section.site-main.page-index.center li.__photo:not(.slide-right) {
+    left: 50px !important;
+    display: none;
+   /* opacity: 0;*/
+}
+section.site-main.page-index.top li.__photo:not(.slide-left) {
+    left: -65px !important;
+    display: none;
+    /*opacity: 0;*/
+}
+
+/*Responsive*/
+@media only screen and (max-width: 990px) {
+    section.site-main.page-index{
+    position: unset !important;
+}
+section.site-main.page-index.top, section.site-main.page-index.center,
+#top .circle-dot-1,
+#top .circle-dot-2,
+#top .circle-dot-3 {
+    display: none;
+}
+}
+
+/* IPAD portrait mode */
+@media only screen and (min-width:768px) and (max-width: 990px){
+section.site-main.page-index.top{
+    position: unset;
+    left: 0;
+    top: 0;
+}
+section.site-main.page-index li.slide1.__photo.slide-right,
+section.site-main.page-index li.slide1.__photo.slide-left{
+    transform: unset !important;
+}
+section.site-main.page-index.top li.__photo:not(.slide-left) {
+    left: 0px !important;
+}
+section.site-main.page-index.center li.__photo:not(.slide-right) {
+    left: 0px !important;
+}
+}
+
+/* Phone Landscape mode */
+/*@media only screen and (max-width:767px){
+
+}*/
+
+/* Phone portrait mode */
+@media only screen and (min-width:480px) and (max-width: 767px){
+    .fade-author-meta {
+    text-align: center;
+    display: block;
+}
+.author-meta {
+    display: grid;
+    margin-bottom: 15px;
+}
+.fade-text {
+    text-align: center;
+}
+section.site-main.page-index.top{
+    position: unset;
+    left: 0;
+    top: 0;
+}
+section.site-main.page-index li.slide1.__photo.slide-right,
+section.site-main.page-index li.slide1.__photo.slide-left{
+    transform: unset !important;
+}
+.remove-h-s {
+    display: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.ultimate-hero-section h1.av-special-heading-tag,
+#top .ultimate-middle .av-special-heading .av-subheading.av-subheading_below p,
+.ultimate-middle {
+    padding: 0 !important;
+}
+}
+
+
+/* Small Phone portrait mode */
+@media only screen and (max-width: 479px){
+
+.remove-h-s {
+    display: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.ultimate-hero-section h1.av-special-heading-tag,
+#top .ultimate-middle .av-special-heading .av-subheading.av-subheading_below p,
+.ultimate-middle {
+    padding: 0 !important;
+}
+}
+
+section.site-main.page-index{
+    position: relative;
+}
+.page-index { height: 300px; width: 100%;}
+.page-index .container {   margin: 0 auto; width: 100%; height: 100%; overflow: inherit; position: relative; }
+.page-index .container .__photo { position: absolute; left: 0; top: 0; width: 100%; height: 100%; list-style-type: none;margin: 0;}

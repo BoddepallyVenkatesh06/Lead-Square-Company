@@ -1,0 +1,42 @@
+.logo-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.logo-main-row {
+    background: #fff;
+    padding: 20px;
+    margin: 0 3px 0 3px;
+    border-radius: 5px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.logo-row .owl-stage {
+    display: flex;
+}
+.logo-row .owl-stage-outer {
+    overflow: hidden;
+}
+.logo-row .owl-nav.disabled,
+.logo-row .owl-dots {
+    display: none;
+}
+.logo-row .owl-item{
+    display: grid;
+    flex: 1 0 auto;
+}
+.logo-row .item {
+    display: grid;
+}
+/* Small Phone portrait mode */
+@media only screen and (max-width: 479px){
+.logo-main-row {
+    text-align: center;
+}
+
+}

@@ -1,0 +1,328 @@
+/*Start custom style*/
+.cta.section {
+    color: #fff;
+  }
+  .cta.section .thumbnail{
+    background: #0074d6;
+  }
+  .cta-caption {
+      position: relative;
+      padding: 20px;
+  }
+  #carousel-thumb .carousel-inner {
+      overflow: initial;
+  }
+  #section-0 .mb20{
+    margin-bottom: 145px;
+      padding-top: 145px;
+  }
+  section#section-breadcrumb {
+      margin-top: 65px;
+      padding: 15px;
+  }
+  section#section-breadcrumb span{
+  color: #828282;
+  }
+  .category-banner {
+      background: #ECFDFF;
+  }
+  section#category-banner h1 {
+      color: #fff;
+  }
+  .breadcrumb-search input:focus-visible,
+  .breadcrumb-search-form i:focus-visible,
+  .breadcrumb-search-form button{
+    outline: none;
+  }
+  .breadcrumb-search .input-group{
+    width: 50%;
+      float: right;
+  }
+  .breadcrumb-menu p {
+      margin: 0;
+  }
+  .padding-left {
+      padding-left: 0;
+  }
+  .breadcrumb-search-form {
+    position: relative;
+  }
+  
+  .breadcrumb-search-form input {
+    border: 1px solid #E4E6ED;
+      padding: 5px 25px;
+      float: right;
+      border-radius: 50px !important;
+      background: #F1F4FB;
+  }
+  
+  .breadcrumb-search-form button {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border: none;
+    width: 50px;
+    padding-top: 5px;
+    color: #b7b7b7;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .breadcrumb-search-form i{
+    color: #575653;
+  }
+  .breadcrumb-search-form i:focus-visible{
+    outline: none;
+  }
+  #ebook-slider{
+    background-color: #f8f8f8;
+  }
+  #ebook-slider .blockHeader h1{
+    line-height: 50px;
+  color: #222222;
+  font-weight: 700;
+  }
+  #ebook-slider .bx-wrapper{
+    background: #f8f8f8;
+    border: none;
+    box-shadow: unset;
+  }
+  #ebook-slider .eachslider_bx:hover {
+      background: #f8f8f8;
+  }
+  .category-banner img{
+    margin-top: 50px;
+  }
+  #ebook-slider .eachslider_bx .read_more_bx {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  #ebook-slider .eachslider_bx:hover .read_more_bx{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    background-color: #fff;
+    padding: 10px;
+      width: 50%;
+  
+  }
+  .eachslider_bx img:hover{
+    background-color: #000;
+  }
+  .element_1623037708157 img {
+      border-radius: 10px;
+  }
+  .post-grid .pagination {
+      display: block !important;
+  }
+  .element.element_1623037713222.categories {
+      margin: 10px 0;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  .layout-21726 .element_1623037708157{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  /*Category page css*/
+  .hCta .btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    clear: both;
+    font-size: .8rem!important;
+    border-radius: 10px!important;
+    border: 2px solid #fff;
+  }
+  .section-cta .btn2,
+  .section-cta .btn2:hover{
+    color: #fff;
+}
+  .freeBgWhite {
+    background-color: #fff!important;
+    color: #3f78ee!important;
+    border-radius: 5px!important;
+  }
+  .homeOutLine,
+  .homeOutLine:hover {
+    color: #fff;
+  }
+  #ebook-slider .eachslider_bx:hover img {
+    opacity: 0.5;
+  }
+  #category-post-section .pgcu_post__image img{
+  border-radius: 10px;
+  }
+  #category-post-section #pgcu_style2 .pgcu_post.pgcu_post--style1 {
+    border: none;
+  }
+  #category-post-section #pgcu_style2 .pgcu_post.pgcu_post--style1 .pgcu_post__contents{
+  padding-left: 0;
+  }
+  #category-post-section #pgcu_style2 #pgcu_style2 .pgcu_post .post_title h4:hover{
+  color: #222222;
+  }
+  /*Blog page*/
+  .breadcrumb-menu.use-case {
+    float: left;
+    display: inline-block;
+    margin-right: 16px;
+    background: #F78B69;
+    padding: 3px 15px 3px 15px;
+    border-radius: 50px;
+  }
+  .breadcrumb-menu.use-case span {
+    color: #fff !important;
+    font-size: 15px;
+  }
+  .breadcrumb-menu.industry{
+    line-height: 2.2;
+  }
+  section#blog-banner-section {
+    background: #FBFCFF;
+  }
+  .section-breadcrumb.blog{
+    background: #FBFCFF;
+    border-bottom: 1px solid #F1F4FA;
+  }
+  section#blog-banner-section .blog {
+    text-align: center;
+  }
+  section#blog-banner-category {
+    background: #FDFEFF;
+  }
+  #ebook-banner{
+    background: #ECFDFF;
+    margin-top: 12px;
+  }
+  form#e-book-subscribe input, form#e-book-subscribe button {
+    width: 100%;
+  }
+  form#e-book-subscribe button {
+    background-color: #2E45FF !important;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  form#e-book-subscribe input {
+    height: 47px;
+    border-color: #DADFE0;
+    outline: none;
+  }
+  form#e-book-subscribe input::placeholder {
+    font-size: 15px;
+  }
+  form#e-book-subscribe input:focus {
+    outline: none !important;
+    border: 1px solid #DADFE0;
+    border-color: #DADFE0;
+    box-shadow: 0 0 10px #dadfe0;
+  }
+  .banner-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .ebook-list-btn {
+    margin: 0;
+  }
+  .ebook-banner-heading h1{
+    color: #222222;
+      font-weight: 700;
+  }
+  .ebook-banner-heading p {
+    color: #5b627d;
+    font-weight: 400;
+  }
+  .equalHeight.ebook-banner-heading a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+  }
+  .equalHeight.ebook-banner-heading p {
+    margin: 0;
+  }
+  .singlePost .entry-meta{
+    width: 405px;
+  }
+  .cta-btn{
+    display: inline-block;
+      text-align: center;
+      width: 100%;
+  }
+  #blog-banner-section .blog h1,
+  #blog-banner-category-industry .blog h2,
+  #lsq-recent-gridslider .blog h2 {
+    color: #222222;
+    font-weight: 700;
+  }
+  #blog-banner-section .blog p {
+    color: #222222;
+      font-weight: 600;
+  }
+  #ebook-list-track-form{
+    background: #8080800f;
+  }
+  section#section-breadcrumb span a{
+    color: #828282;
+  }
+  #category-banner{
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 100px 0 140px 0;
+      background-blend-mode: multiply;
+      color: #fff;
+      background-color: #0808086b;
+  }
+  /*Start custom css for responsive*/
+  @media only screen and (min-width:991px) and (max-width:1199px){
+    #ebook-banner {
+      margin-top: 63px;
+  }
+  }
+  @media only screen and (min-width:768px) and (max-width: 990px){
+    #ebook-banner {
+      margin-top: 63px;
+  }
+  .section-cta .col-md-7{
+    padding: 10px;
+    text-align: center;
+}
+  }
+  
+  /* Phone portrait mode */
+  @media only screen and (min-width:480px) and (max-width: 767px){
+    #ebook-banner {
+      margin-top: 0px;
+  }
+  .section-cta .col-md-7{
+    padding: 10px;
+    text-align: center;
+}
+  }
+  @media only screen and (max-width: 479px){
+    section#section-5 .btn.freeBgWhite,
+    section#section-5 .btn.homeOutLine {
+      width: 100% !important;
+  }
+  .section-cta .col-md-7{
+    padding: 10px;
+    text-align: center;
+}
+  }
+  @media (min-width: 1200px) {
+  #category-post-section .pgcu_container {
+    max-width: 1200px;
+  }
+
+  }

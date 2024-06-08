@@ -1,0 +1,142 @@
+.shareArticle {
+	 display: flex;
+	 flex-flow: column;
+	 width: 100%;
+}
+.flex-end {
+    align-items: flex-end;
+}
+.flex-start {
+    align-items: flex-start;
+}
+.shareArticle.center {
+    align-items: center;
+}
+ .shareSocial {
+	 display: flex;
+	 flex-flow: row;
+	 align-items: center;
+}
+ .shareSocial .socialTitle {
+	 margin: 0 15px 0 0;
+	 font-size: 14px;
+}
+ .shareSocial .socialList {
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+	 display: flex;
+	 justify-content: flex-start;
+	 justify-content: center;
+	 flex-flow: row wrap;
+}
+ .shareSocial .socialList li {
+	 margin: 5px;
+}
+ .shareSocial .socialList li:first-child {
+	 padding-left: 0;
+}
+ .shareSocial .socialList li a {
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 width: 45px;
+	 height: 45px;
+	 border-radius: 100%;
+	 border: 1px solid #6F7B9A;
+}
+span.lsq-brands img {
+    display: block;
+    width: 25px;
+    height: 25px 
+}
+span.lsq-brands.lsq-Linkedin img.black-socail {
+    width: 26px;
+    height: 26px;
+}
+.lsq-footer-socket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lsq-footer-socket-left {
+    display: flex;
+    align-items: center;
+}
+
+.lsq-footer-socket-c {
+    margin-right: 30px;
+    color: #6F7B9A;
+    font-size: 14px;
+}
+
+.lsq-footer-socket-link {
+    color: #6F7B9A;
+    font-size: 16px;
+}
+div#footer-page .template-page.content {
+    padding-bottom: 25px;
+}
+#top #footer-page .content .flex_column .widget_nav_menu li a {
+    padding: 0.3em 3px;
+    color:#6F7B9A;
+    font-size: 16px;
+    padding-left: 0;
+    display: inline-block;
+}
+#top #footer-page .content .flex_column .widget_nav_menu li a span {
+    background: #3E475F;
+    color: #000718;
+    padding: 5px 10px 5px 10px;
+    border-radius: 80px;
+    margin-left: 5px;
+    font-size: 9px;
+}
+#top #footer-page .content .flex_column .textwidget{
+    color:#6F7B9A;
+    font-size: 16px;
+}
+#top #footer-page .content .flex_column .widget_nav_menu li a:hover {
+    background: unset;
+    color: #fff;
+}
+#top #footer-page .content .flex_column .widget_nav_menu li {
+    border: unset;
+    background: unset;
+}
+.responsive #top #footer-page .container.av-section-cont-open {
+    max-width: 95%;
+    width: 95%;
+}
+.shareSocial .socialList li a:hover {
+    border-color: #fff;
+}
+.shareSocial .socialList li a:hover img.white-socail {
+    display: block;
+}
+span.lsq-brands img.white-socail,
+.shareSocial .socialList li a:hover img.black-socail {
+    display: none;
+}
+@media only screen and (max-width: 1180px){
+.responsive #top #footer-page .container.av-section-cont-open {
+    max-width: 85%;
+    width: 85%;
+}
+}
+@media only screen and (max-width: 767px){
+.flex-end {
+    align-items: flex-start;
+}
+#footer-page .flex_column_table {
+    margin-top: 0 !important;
+}
+.responsive #top #footer-page .flex_column {
+    margin-bottom: 0;
+}
+div#footer-page .template-page.content {
+    padding-top: 10px;
+}
+}

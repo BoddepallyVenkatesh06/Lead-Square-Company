@@ -1,0 +1,77 @@
+.award-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.awards-main-row {
+    background: #fff;
+    padding: 20px;
+    margin: 0 3px 0 3px;
+    border-radius: 5px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.awards-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 75px;
+}
+.awards-title {
+   word-break: break-all;
+   padding-top: 20px;
+    padding-bottom: 20px;
+}
+.awards-year {
+    font-size: 18px;
+    line-height: 29px;
+    color: #3f78ee;
+    padding-bottom: 20px;
+    font-family: 'Graphik-Semibold';
+}
+.award-row .owl-stage {
+    display: flex;
+}
+.award-row .owl-stage-outer {
+    overflow: hidden;
+}
+.award-row .owl-nav.disabled,
+.award-row .owl-dots {
+    display: none;
+}
+.award-row .owl-item{
+    display: grid;
+    flex: 1 0 auto;
+}
+.award-row .item {
+    display: grid;
+}
+#top .award-row-btn.customNavigation{
+    bottom: 0 !important;
+    right: -10px !important;
+    top: -10px !important;
+}
+.awardprev,
+.awardnext {
+    cursor: pointer;
+}
+@media only screen and (max-width:1199px){
+    #top .award-row-btn.customNavigation {
+    right: 0 !important;
+}
+}
+/* Small Phone portrait mode */
+@media only screen and (max-width: 479px){
+
+    #top .award-row-btn.customNavigation {
+    right: -10px !important;
+}
+.awards-main-row {
+    text-align: center;
+}
+}

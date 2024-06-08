@@ -1,0 +1,34 @@
+.swiper-wrapper-inner {
+    position: relative;
+    display: flex;
+    height: 100px;
+}
+.swiper-wrapper-inner .swiper-slide {
+    position: absolute;
+    width: 100%;
+}
+/*.swiper-slide {
+    display: none;
+}
+.swiper-slide:first-child {
+    display: block;
+}*/
+.mySwipers .inner,
+.mySwipers {
+    height: 100px;
+    overflow: hidden;
+}
+/*  .rotator-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+.inner img {
+    width: 90%;
+    max-width: 180px;
+    margin: 0 auto;
+    display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}*/

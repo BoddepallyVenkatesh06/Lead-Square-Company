@@ -1,0 +1,176 @@
+.services-wrapper {
+  width: auto;
+  min-height: 400px;
+  padding: 25px;
+}
+
+.service-container {
+  text-align: center;
+  margin-top: 25px;
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.singleservice {
+  -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.singleservice-inner {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #ebfaff;
+    font-family: 'Graphik';
+    text-align: left;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-bottom: 8px;
+}
+
+.singleservice-img {
+    width: 30%;
+}
+
+.singleservice-text {
+    width: 70%;
+}
+
+.singleservice-text p {
+    padding: 0;
+    margin: 0;
+}
+img.serviceicon {
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+h6.servicetitle {
+    font-weight: normal;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-family: 'Graphik-Semibold';
+    text-transform: uppercase;
+    font-size: 13px !important;
+}
+.singleservice-text p {
+    padding: 0;
+    margin: 0 !important;
+    font-size: 12px !important;
+}
+#top .product-right {
+    width: 72%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#top .product-left {
+    width: 28%;
+    text-align: left;
+}
+#top .boxlr .singleservice {
+    -webkit-box-flex: 0; */
+    -ms-flex: 0 0 25%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 33%;
+    max-width: 33%;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#top .service-container.boxlr {
+    background: #fcfdff;
+    border: 1px solid #d8ebfe;
+    border-radius: 5px;
+    align-items: center;
+    padding: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+     background-image: url(../images/lsq-icon-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.link-icon img {
+    width: 20px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+#top .service-container.boxlr .singleservice-inner{
+  background: #fff;
+  border: 1px solid;
+    border-color: #d8ebfe;
+}
+#top .product-left ul {
+    list-style: none;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+#top .product-left h3 {
+    margin-left: 15px !important;
+    margin: 0;
+    font-size: 20px !important;
+}
+#top .product-left ul li {
+    padding: 5px 0;
+}
+#top .product-left ul li:hover a {
+    color: #047afb;
+    text-decoration: none;
+}
+#top .product-left p {
+    font-size: 0px !important;
+    line-height: unset !important;
+    margin: 0 !important;
+}
+/* IPAD portrait mode */
+@media only screen and (min-width:768px) and (max-width: 990px){
+  .singleservice {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+}
+}
+/* Phone portrait mode */
+@media only screen and (min-width:480px) and (max-width: 767px){
+    .singleservice {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+}
+
+
+/* Small Phone portrait mode */
+@media only screen and (max-width: 479px){
+
+  .singleservice {
+        width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+}

@@ -1,0 +1,212 @@
+.main-reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/*.main-reviews-inner {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inherit;
+}*/
+.main-reviews-inner.item {
+    display: grid;
+}
+#pick-icon-slide .owl-item {
+    display: grid;
+    flex: 1 0 auto;
+}
+.review-shadow {
+     box-shadow: rgb(0 0 0 / 3%) 0px 4px 12px;
+    padding: 25px;
+    border: 0.5px solid #f3f3f3;
+    border-radius: 6px;
+    margin: 10px;
+}
+.review-img {
+    width: 120px;
+    min-height: 34px;
+}
+.review-img img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.review-rating .review.active,
+.review-footer .review.active
+ {
+    color: #FFE234;
+}
+.review-hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #e1e1e1;
+    height: 1px;
+}
+.review-rating {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.review-details span {
+    font-size: 12px;
+}
+.r-no {
+    font-family: 'Graphik-Semibold';
+    color: #000;
+    font-size: 22px;
+}
+.review-rating span.av-icon-char.review
+ {
+    font-size: 24px;
+    margin-right: 3px;
+}
+.review-footer span.av-icon-char.review
+ {
+    font-size: 13px;
+    margin-right: 3px;
+}
+span.verified-r:after,
+span.submit-r:after {
+    content: url(../images/xplore_industry_arrow.svg);
+padding-left: 5px;
+    display: inline-grid;
+    height: 5px;
+    width: 5px;
+    position: relative;
+    top: 0px;
+    padding-right: 5px;
+}
+span.total-review {
+    margin-right: 5px;
+}
+span.r-no {
+    margin-right: 10px;
+}
+.review-icon {
+    margin-top: 25px;
+}
+#top p.review-des {
+    padding: 0;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    font-size: 13px !important;
+    margin-bottom: 15px !important;
+}
+span.submit-r a,
+span.verified-r,
+span.total-review {
+    color: #000;
+}
+a.review-more {
+    position: absolute;
+    bottom: 20px;
+}
+a.review-more:hover,
+span.submit-r a:hover {
+    color: #027bfe !important;
+    text-decoration: none;
+}
+span.av-icon-char.review.unactive {
+    color: #E5E5E5;
+}
+.client-review img {
+    width: 120px;
+    position: relative;
+    top: 5px;
+}
+.client-review-bottom img {
+    width: 80px;
+}
+/* IPAD portrait mode */
+@media only screen and (min-width:768px) and (max-width: 990px){
+/*.main-reviews-inner {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 250%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+}*/
+}
+/* Phone portrait mode */
+@media only screen and (min-width:480px) and (max-width: 767px){
+/*    .main-reviews-inner {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+}*/
+}
+
+
+/* Small Phone portrait mode */
+@media only screen and (max-width: 479px){
+
+/*.main-reviews-inner {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}*/
+.main-reviews-inner.item {
+    display: block;
+}
+}
+/*
+*   Owl Carousel Owl Demo Theme 
+*   v1.23
+*/
+.client-review-slide .owl-stage{
+    display: flex;
+}
+.owl-theme .owl-controls{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.client-review-slide{
+    display: block !important;
+}
+/* Styling Next and Prev buttons */
+
+.client-review-slide.owl-theme .owl-controls .owl-buttons div{
+    color: #fff;
+    display: inline-block;
+    zoom: 0;
+    margin: 0;
+    font-size: 25px;
+    background: #5a82b970;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    line-height: 1.1;
+    border-radius: 50%;
+}
+.client-review-slide .owl-buttons {
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%);
+    margin-top: -30px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    border: none !important;
+    width: 100%;
+}
+.client-review-slide .owl-buttons .owl-prev {
+    left: 0px;
+}
+.client-review-slide .owl-buttons .owl-next {
+    right: 0px;
+}
+.client-review-slide .owl-buttons .owl-next, .client-review-slide .owl-buttons .owl-prev {
+    position: absolute;
+}

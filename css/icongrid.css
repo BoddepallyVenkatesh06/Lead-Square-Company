@@ -1,0 +1,431 @@
+/* ======================================================================================================================================================
+ICONGRID
+====================================================================================================================================================== */
+
+.avia-icongrid{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.avia-icongrid .av-icon-cell-item{
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+
+.avia-icongrid-icon{
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    color: initial;
+}
+
+.avia-icongrid .av-icon-cell-item .avia-icongrid-wrapper{
+    position: relative;
+    display: block;
+	-webkit-backface-visibility: hidden;   /* new for mobile even to parent container  */
+    backface-visibility: hidden;    /* new for mobile even to parent container  */
+}
+
+.avia-icongrid .av-icon-cell-item .avia-icongrid-content{
+    opacity: 0;
+    visibility: hidden;
+    padding: 4em 3em;
+}
+
+.avia-icongrid .av-icon-cell-item .avia-icongrid-flipback{
+	padding: 4em 3em;
+}
+
+.avia-icongrid .av-icon-cell-item .avia-icongrid-front,
+.avia-icongrid .av-icon-cell-item .avia-icongrid-front.bg-img:before,
+.avia-icongrid .av-icon-cell-item .avia-icongrid-flipback.bg-img:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.avia-icongrid .av-icon-cell-item .avia-icongrid-front.bg-img:before,
+.avia-icongrid .av-icon-cell-item .avia-icongrid-flipback.bg-img:before{
+	content: "";
+	display: block;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);
+}
+
+.avia-icongrid-numrow-1 .av-icon-cell-item{
+	flex: 0 1 100%;
+}
+
+.avia-icongrid-numrow-2 .av-icon-cell-item{
+	flex: 0 1 50%;
+}
+
+.avia-icongrid-numrow-3 .av-icon-cell-item{
+	flex: 0 1 33.33%;
+}
+
+.avia-icongrid-numrow-4 .av-icon-cell-item{
+	flex: 0 1 25%;
+}
+
+.avia-icongrid-numrow-5 .av-icon-cell-item{
+	flex: 0 1 20%;
+}
+
+/*	when link is set to grid item img tag in content gets an overlay - breaks layout  */
+.avia-icongrid a.avia-icongrid-wrapper .image-overlay{
+	display: none !important;
+}
+
+.avia-icongrid a.avia-icongrid-wrapper:hover{
+	cursor: pointer;
+}
+
+
+/* flipbox */
+.avia-icongrid-flipbox:before,
+.avia-icongrid-flipbox:after{
+	display: none;				/* needed for flex layout - pseudo containers follow rules  */
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item{
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item article{
+    position: relative;
+    display: block;
+    z-index: 20;				/* 3, changed 4.8 as links not working */
+    min-height: 200px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transition: -webkit-transform 10.6s;
+    transition: transform 10.6s;
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-front,
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-flipback{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+    /*width: 100%;*/
+}
+
+.avia-msie-9 .avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-flipback{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-front{
+	margin: 1px;
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-flipback{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	margin: 1px;
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-front .avia-icongrid-inner,
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-flipback .avia-icongrid-inner{
+    position: absolute;
+    color: initial;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 4em 3em;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+/*** Flip Grid y-axis ***/
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-front{
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item.invert-flip .avia-icongrid-front{
+	z-index: 2;
+	-webkit-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-flipback{
+    -webkit-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item.invert-flip .avia-icongrid-flipback{
+    -webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item:hover .avia-icongrid-front,
+.avia-icongrid-flipbox .av-icon-cell-item.avia-hover .avia-icongrid-front{
+    -webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item.invert-flip:hover .avia-icongrid-front,
+.avia-icongrid-flipbox .av-icon-cell-item.invert-flip.avia-hover .avia-icongrid-front{
+    -webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item:hover .avia-icongrid-flipback,
+.avia-icongrid-flipbox .av-icon-cell-item.avia-hover .avia-icongrid-flipback{
+    -webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.avia-icongrid-flipbox .av-icon-cell-item.invert-flip:hover .avia-icongrid-flipback,
+.avia-icongrid-flipbox .av-icon-cell-item.invert-flip.avia-hover .avia-icongrid-flipback{
+    -webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.avia-msie-9 .avia-icongrid-flipbox .av-icon-cell-item:hover .avia-icongrid-front,
+.avia-msie-9 .avia-icongrid-flipbox .av-icon-cell-item.avia-hover .avia-icongrid-front{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.avia-msie-9 .avia-icongrid-flipbox .av-icon-cell-item:hover .avia-icongrid-flipback,
+.avia-msie-9 .avia-icongrid-flipbox .av-icon-cell-item.avia-hover .avia-icongrid-flipback{
+    opacity: 1;
+    visibility: visible;
+}
+
+/****  End Flipbox y-axis  ****/
+
+
+/*** Flip Grid x-axis ***/
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-front{
+    z-index: 2;
+    -webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.invert-flip .avia-icongrid-front{
+    z-index: 2;
+    -webkit-transform: rotateX(-180deg);
+	-ms-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item .avia-icongrid-flipback{
+    -webkit-transform: rotateX(-180deg);
+	-ms-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.invert-flip .avia-icongrid-flipback{
+    -webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item:hover .avia-icongrid-front,
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.avia-hover .avia-icongrid-front{
+    -webkit-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.invert-flip:hover .avia-icongrid-front,
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.invert-flip.avia-hover .avia-icongrid-front{
+    -webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item:hover .avia-icongrid-flipback,
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.avia-hover .avia-icongrid-flipback{
+    -webkit-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.invert-flip:hover .avia-icongrid-flipback,
+.avia-flip-x .avia-icongrid-flipbox .av-icon-cell-item.invert-flip.avia-hover .avia-icongrid-flipback{
+    -webkit-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+/****  End Flipbox x-axis  ****/
+
+
+
+/* tooltip */
+.avia-icongrid-tooltip:before,
+.avia-icongrid-tooltip:after{
+	display: none;					/* needed for flex layout - pseudo containers follow rules  */
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item article:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item .avia-icongrid-front{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    bottom: 50%;
+    top: auto;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item .avia-icongrid-front.bg-img .avia-icongrid-inner{
+    position: absolute;
+    color: initial;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 4em 3em;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item .avia-icongrid-content{
+    position: absolute;
+    bottom: 4em;
+    width: 85%;
+    left: 7.5%;
+    padding: 1em 2em !important;
+    background-color: white;
+    color: white;
+    z-index: 8;
+    border-width: 0.3em;
+    border-style: solid;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0 0 2em rgba(0,0,0,0.1);
+    box-shadow: 0 0 2em rgba(0,0,0,0.1);
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item .avia-icongrid-content .avia-icongrid-inner{
+    color: initial;
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item .avia-icongrid-content:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left-width: 0.5em;
+    border-right-width: 0.5em;
+    border-top-width: 0.5em;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: inherit;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -0.75em;
+    -webkit-box-shadow: 0 0 2em rgba(0,0,0,0.1);
+    box-shadow: 0 0 2em rgba(0,0,0,0.1);
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item:hover .avia-icongrid-content,
+.avia-icongrid-tooltip .av-icon-cell-item.avia-hover .avia-icongrid-content{
+    visibility: visible;
+    opacity: 1;
+    bottom: 45%;
+}
+
+.avia-icongrid-tooltip .av-icon-cell-item:hover .avia-icongrid-front,
+.avia-icongrid-tooltip .av-icon-cell-item.avia-hover .avia-icongrid-front{
+    bottom: 0.5em;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.avia-icongrid-tooltip .article-icon-entry.av-icongrid-empty .avia-icongrid-content,
+.avia-icongrid-tooltip .av-icon-cell-item:hover .article-icon-entry.av-icongrid-empty .avia-icongrid-content,
+.avia-icongrid-tooltip .av-icon-cell-item.avia-hover .article-icon-entry.av-icongrid-empty .avia-icongrid-content{
+	display: none;
+}
+
+
+/****  responsive cases  ****/
+@media only screen and (max-width: 989px)
+{
+	#top .avia-icongrid.av-flex-cells.av-break-989 .av-icon-cell-item{
+		flex: 1 1 100%;
+	}
+
+	#top .avia-icongrid.av-flex-cells.av-can-break-50.av-50-break-989 .av-icon-cell-item{
+        flex: 0 1 50%;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    #top .avia-icongrid.av-flex-cells.av-can-break-50.av-50-break-767 .av-icon-cell-item{
+		flex: 0 1 50%;
+	}
+
+	#top .avia-icongrid.av-flex-cells.av-break-767 .av-icon-cell-item,
+    #top .avia-icongrid.av-flex-cells.av-can-break-50.av-50-break-989 .av-icon-cell-item{
+		flex: 1 1 100%;
+	}
+}
